@@ -4,7 +4,7 @@ def validar_numero_int(mensaje):
   while True:
     numero = input(mensaje).strip()
     if numero.isdigit() and numero != "":
-      return True
+      return int(numero)
     else:
       print("Entrada inválida. Por favor, ingrese un número válido.")
 
@@ -12,7 +12,7 @@ def validar_numero_float(mensaje):
   while True:
     numero = input(mensaje).strip()
     if numero.replace('.', '', 1).isdigit() and numero != "":
-      return True
+      return float(numero)
     else:
       print("Entrada inválida. Por favor, ingrese un número válido.")
 
